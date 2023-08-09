@@ -12,7 +12,7 @@
     $senha = $_POST['senha'];
 
     //fazendo pesquisa no banco de dados com MYSQL
-    $sql = "select * from usuarios where usuario = '$usuario'";
+    $sql = "select * from usuarios where usuario = '$usuario' AND senha = '$senha'";
 
     //mysqli_query = função utilizada para fazer consultas no banco de dados e executar comandos
     //(utiliza a conexão e a string contendo o comendo)
